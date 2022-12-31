@@ -21,4 +21,6 @@ model(lines[0])
 
 # This line could be used only in python interactive notebooks
 pprint(_)
+pprint(model(lines[0], max_length=20))
+pprint(model(lines[0], num_return_sequences=3, max_length=20))
 
