@@ -8,3 +8,8 @@ import matplotlib.pyplot as plt
 from pprint import pprint
 
 # !cat robert_frost.txt
+
+lines = [line.rstrip() for line in open('robert_frost.txt')]
+lines = [line for line in lines if len(line) > 0]
+
+model = pipeline("text-generation")
