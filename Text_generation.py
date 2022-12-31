@@ -13,3 +13,6 @@ lines = [line.rstrip() for line in open('robert_frost.txt')]
 lines = [line for line in lines if len(line) > 0]
 
 model = pipeline("text-generation")
+
+set_seed(1234)
+print(lines[0])
