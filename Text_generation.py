@@ -16,3 +16,9 @@ model = pipeline("text-generation")
 
 set_seed(1234)
 print(lines[0])
+
+model(lines[0])
+
+# This line could be used only in python interactive notebooks
+pprint(_)
+
