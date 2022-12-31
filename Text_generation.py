@@ -24,3 +24,6 @@ pprint(_)
 pprint(model(lines[0], max_length=20))
 pprint(model(lines[0], num_return_sequences=3, max_length=20))
 
+def wrap(x):
+  return textwrap.fill(x, replace_whitespace=False, fix_sentence_endings=True)
+
